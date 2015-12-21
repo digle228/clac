@@ -8,10 +8,48 @@
 
 import UIKit
 
-class SilderViewController: UIViewController {
+class SilderViewController: UIViewController, UITextFieldDelegate {
+   
+    @IBOutlet weak var amount: UITextField!
+    @IBOutlet weak var total: UILabel!
+    @IBOutlet weak var perPsersonTotal: UILabel!
+    @IBOutlet weak var personNum: UITextField!
+    @IBOutlet weak var tipSilder: UISlider!
+    @IBOutlet weak var tipRange: UILabel!
+    
+    @IBAction func tipValueBar(sender: AnyObject) {
+        
+        let correctValue = Int(self.tipSilder.value)
+        self.tipRange.text = "\(correctValue)%"
+        let myAmount = Int(self.amount.text!)!
+        let myTotal = (myAmount * correctValue / 100) + myAmount
+        self.total.text = "\(myTotal)"
+        print("\(myTotal)")
+        let personNumber = Int(self.personNum.text!)
+        let perPersonTotalOut = myTotal / personNumber!
+        self.perPsersonTotal.text = "\(perPersonTotalOut)"
 
+    }
+    
+    func countOut() {
+        
+        
+        
+    }
+    
+
+    @IBAction func amountEditing(sender: AnyObject) {
+     
+        
+    }
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
         // Do any additional setup after loading the view.
     }

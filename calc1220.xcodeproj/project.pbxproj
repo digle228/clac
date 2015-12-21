@@ -193,7 +193,7 @@
 				TargetAttributes = {
 					911641CC1C26858200CF3CAA = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = PKCQ6CD2AP;
+						DevelopmentTeam = 8H7X36TF25;
 					};
 					911641E01C26858200CF3CAA = {
 						CreatedOnToolsVersion = 7.2;
@@ -402,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = calc1220/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.calc1220;
@@ -413,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = calc1220/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.calc1220;
@@ -487,6 +489,7 @@
 				911641F71C26858200CF3CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		911641F81C26858200CF3CAA /* Build configuration list for PBXNativeTarget "calc1220Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +498,7 @@
 				911641FA1C26858200CF3CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		911641FB1C26858200CF3CAA /* Build configuration list for PBXNativeTarget "calc1220UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +507,7 @@
 				911641FD1C26858200CF3CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

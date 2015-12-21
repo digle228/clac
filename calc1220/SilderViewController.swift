@@ -18,7 +18,7 @@ class SilderViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var tipRange: UILabel!
     
     @IBAction func tipValueBar(sender: AnyObject) {
-        
+        if self.amount.text?.characters.count > 0 {
         let correctValue = Int(self.tipSilder.value)
         self.tipRange.text = "\(correctValue)%"
         let myAmount = Int(self.amount.text!)!
@@ -28,15 +28,12 @@ class SilderViewController: UIViewController, UITextFieldDelegate {
         let personNumber = Int(self.personNum.text!)
         let perPersonTotalOut = myTotal / personNumber!
         self.perPsersonTotal.text = "\(perPersonTotalOut)"
-
+        }
+     else {
+    self.total.text = "Amount can't nil"
     }
     
-    func countOut() {
-        
-        
-        
     }
-    
 
     @IBAction func amountEditing(sender: AnyObject) {
      
